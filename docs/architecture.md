@@ -63,7 +63,7 @@ The system uses the following technologies:
 ---
 ## 5. Component Description
 
-### 6.1 Frontend
+### 5.1 Frontend
 
 The frontend is responsible for the user interface and user interaction.
 
@@ -79,7 +79,7 @@ The frontend is built using React and provides a simple and user-friendly experi
 
 ---
 
-### 6.2 Backend
+### 5.2 Backend
 
 The backend handles the main business logic of the system.
 
@@ -96,7 +96,7 @@ The backend is built using Node.js and Express.
 
 ---
 
-### 6.3 Database
+### 5.3 Database
 
 The database stores all system data in a structured format.
 
