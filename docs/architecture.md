@@ -125,6 +125,8 @@ flowchart LR
     Backend -->|Result| Frontend
     Frontend -->|Display| User
 
+
+
 ## 7. Functional Requirements Summary
 
 The system supports the following main functional requirements:
