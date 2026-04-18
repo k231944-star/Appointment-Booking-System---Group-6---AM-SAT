@@ -123,9 +123,7 @@ flowchart LR
     Backend -->|Query / Update| Database
     Database -->|Response| Backend
     Backend -->|Result| Frontend
-    Frontend -->|Display| User
-
-
+    Frontend -->|Display| User ```
 
 ## 7. Functional Requirements Summary
 
