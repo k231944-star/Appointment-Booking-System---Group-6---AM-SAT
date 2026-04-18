@@ -1,13 +1,14 @@
-# System Architecture
+# Architecture
 
 ## Overview
-The Appointment Booking System follows a three-tier architecture consisting of:
 
-- Frontend (Client)
-- Backend (Server)
-- Database
+The Appointment Booking System uses a simple three-layer architecture:
 
-This structure helps separate concerns, improve scalability, and make the system easier to maintain.
+- Frontend (React)
+- Backend (Node.js + Express)
+- Database (PostgreSQL)
+
+This structure separates user interface, business logic, and data storage to improve maintainability and scalability.
 
 ---
 
@@ -15,14 +16,14 @@ This structure helps separate concerns, improve scalability, and make the system
 
 ```mermaid
 flowchart LR
-    U[Customer / Admin]
-    FE[Frontend (React)]
-    BE[Backend (Node.js / Express)]
-    DB[(PostgreSQL Database)]
+    User[User (Customer/Admin)]
+    Frontend[Frontend - React]
+    Backend[Backend - Node.js Express]
+    Database[(PostgreSQL Database)]
 
-    U --> FE
-    FE --> BE
-    BE --> DB
-    DB --> BE
-    BE --> FE
-    FE --> U
+    User -->|User Actions| Frontend
+    Frontend -->|API Requests| Backend
+    Backend -->|Query / Store Data| Database
+    Database -->|Return Data| Backend
+    Backend -->|Response| Frontend
+    Frontend -->|Display Result| User
