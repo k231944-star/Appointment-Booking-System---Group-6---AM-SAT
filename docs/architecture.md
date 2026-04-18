@@ -1,54 +1,67 @@
 # System Architecture
 
-## 1. Overview
+## 1. Introduction
 
-The Appointment Booking System is designed using a three-tier architecture that separates the system into three main layers:
-
-- Frontend (Client Layer)
-- Backend (Application Layer)
-- Database (Data Layer)
-
-This architecture improves system organization, scalability, and maintainability by separating user interface, business logic, and data storage.
+This document describes the technical architecture of the Appointment Booking System.  
+It outlines the system structure, components, data flow, and design decisions that support core functionalities such as authentication, scheduling, and appointment management.
 
 ---
 
-## 2. Architecture Type
+## 2. Architectural Overview
+
+The system is designed using a **three-tier architecture**, consisting of:
+
+- Presentation Layer (Frontend)
+- Application Layer (Backend)
+- Data Layer (Database)
+
+This layered approach ensures clear separation of concerns, allowing each part of the system to evolve independently while maintaining overall system integrity.
+
+---
+
+## 3. Architecture Style
 
 The system follows a **monolithic architecture**.
 
-All core functionalities such as authentication, booking, service management, and scheduling are implemented within a single backend application.
+All core services—including authentication, booking, scheduling, and service management—are implemented within a single backend application.
 
-This approach is suitable for this project because:
-- The system scope is small to medium
-- It simplifies development and deployment
-- It reduces complexity compared to microservices
-
----
-
-## 3. Tech Stack
-
-The system uses the following technologies:
-
-- **Frontend:** React  
-- **Backend:** Node.js with Express  
-- **Database:** PostgreSQL  
-
-These technologies support full stack development and are widely used for web-based systems.
+### Rationale:
+- Suitable for small to medium-scale applications  
+- Reduces operational complexity compared to microservices  
+- Simplifies development, deployment, and debugging  
+- Enables faster iteration during early development stages  
 
 ---
 
-## 4. Architecture Diagram
+## 4. Technology Stack
+
+The system is built using the following technologies:
+
+| Layer | Technology |
+|------|-----------|
+| Frontend | React |
+| Backend | Node.js (Express) |
+| Database | PostgreSQL |
+
+### Justification:
+- React provides a responsive and modular UI  
+- Node.js enables efficient handling of asynchronous requests  
+- PostgreSQL ensures reliable relational data management  
+
+---
+
+## 5. Architecture Diagram
 
 ```mermaid
 flowchart LR
     User[User]
-    Frontend[Frontend - React]
-    Backend[Backend - Node.js Express]
-    Database[(PostgreSQL Database)]
+    Frontend[Frontend Layer]
+    Backend[Backend Layer]
+    Database[(Database Layer)]
 
-    User -->|User Actions| Frontend
-    Frontend -->|API Requests| Backend
-    Backend -->|Read / Write Data| Database
-    Database -->|Return Data| Backend
+    User -->|Interaction| Frontend
+    Frontend -->|HTTP Request| Backend
+    Backend -->|Query / Update| Database
+    Database -->|Result| Backend
     Backend -->|Response| Frontend
-    Frontend -->|Display Result| User
+    Frontend -->|Render UI| User
