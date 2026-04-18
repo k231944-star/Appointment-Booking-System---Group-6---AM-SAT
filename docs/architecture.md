@@ -114,16 +114,16 @@ It also helps maintain consistency and prevent data conflicts.
 ```mermaid
 flowchart LR
     User[User]
-    Frontend[Frontend Layer]
-    Backend[Backend Layer]
-    Database[(Database Layer)]
+    Frontend[Frontend]
+    Backend[Backend]
+    Database[(Database)]
 
     User -->|Interaction| Frontend
     Frontend -->|API Request| Backend
     Backend -->|Query / Update| Database
     Database -->|Response| Backend
     Backend -->|Result| Frontend
-    Frontend -->|Display| User ```
+    Frontend -->|Display| User
 
 ## 7. Functional Requirements Summary
 
