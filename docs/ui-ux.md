@@ -16,7 +16,8 @@ The system employs a modern design language featuring **Glass-morphism** and **D
   * Body text: 400 Weight (Slate White).
   * Action Items (Buttons): Uppercase, 600 Weight.
 
-> ![alt text](image.png)
+> <img width="891" height="497" alt="image" src="https://github.com/user-attachments/assets/81114098-0543-4157-914f-c49e50c88863" />
+
 
 ---
 
@@ -27,9 +28,10 @@ The wireframes outline the core structure and fundamental information architectu
 * **My Bookings / Dashboard:** The client appointment management list featuring an intuitive Navigation Bar.
 * **Input Forms:** Personal information layout with clearly defined fields (Full Name, Email, Phone Number).
 
-> ![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
+><img width="940" height="915" alt="image" src="https://github.com/user-attachments/assets/f5a9cf62-471f-4c97-a09c-c7d39809995e" />
+<img width="940" height="574" alt="image" src="https://github.com/user-attachments/assets/43be95b2-a8ab-459d-ad68-50e1bbd36468" />
+<img width="941" height="584" alt="image" src="https://github.com/user-attachments/assets/781fd7ae-0d23-48dc-97dc-dbcad1be36b1" />
+
 
 ---
 
@@ -42,8 +44,9 @@ The storyboard simulates the user's journey from landing on the platform to succ
 4. **Success & Record Creation:** The system sends an `INSERT` query to the database and displays a success screen with a Reference ID.
 5. **Client Portal Dashboard:** The client is redirected to the "My Bookings" page to view, modify, or cancel their `Active` appointments.
 
-> ![alt text](image-4.png)
-![alt text](image-5.png)
+> <img width="940" height="429" alt="image" src="https://github.com/user-attachments/assets/f9f199c3-29d8-40c4-b188-d8396b37fb62" />
+<img width="598" height="424" alt="image" src="https://github.com/user-attachments/assets/3f3cbb42-0c68-4817-8f02-a850a845b409" />
+
 
 ---
 
@@ -55,9 +58,10 @@ The high-fidelity UI designs accurately represent the final user experience on t
 * **Dashboard (Welcome Back):** A personalized control panel with summary cards (Total Sessions, Hours Saved, Upcoming Alerts) and a categorized appointment list (Confirmed, Pending, Cancelled).
 * **Appointment Details:** A detailed view of a specific appointment featuring quick action buttons (Join Video Call, Get Directions, Reschedule, Cancel).
 
-> ![alt text](image-6.png)
-![alt text](image-7.png)
-![alt text](image-8.png)
+> <img width="940" height="612" alt="image" src="https://github.com/user-attachments/assets/3b13b151-c7b2-4ba4-8bdf-975770f508c7" />
+<img width="940" height="517" alt="image" src="https://github.com/user-attachments/assets/fd87be7f-06d4-4719-a587-7b8d151fc4d1" />
+<img width="940" height="520" alt="image" src="https://github.com/user-attachments/assets/d37a2611-49fe-49a7-9153-91e0f175b26c" />
+
 
 ---
 
@@ -80,6 +84,7 @@ UX design goes beyond the visual interface; it includes the architectural data f
 * The Backend queries the `services` table via `SELECT * FROM services`.
 * Returns a JSON array containing the service list to dynamically render the UI cards.
 
->![alt text](image-9.gpn)
-![alt text](image-10.png)
-![alt text](image-11.png)
+<img width="940" height="898" alt="image" src="https://github.com/user-attachments/assets/28d6755a-f991-471e-9ea3-0909fcb86edc" />
+<img width="940" height="900" alt="image" src="https://github.com/user-attachments/assets/3dad2a2c-cddd-4f2c-bc4d-397ca371c39f" />
+<img width="940" height="849" alt="image" src="https://github.com/user-attachments/assets/e450eaf3-79ce-44ef-89b7-17e0cf2e9dd9" />
+
