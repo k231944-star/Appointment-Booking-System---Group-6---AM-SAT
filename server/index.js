@@ -235,7 +235,7 @@ app.post("/ai-chat", async (req, res) => {
 
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-2.0-flash",
+      model: "gemini-2.5-flash",
       contents: `
 You are a dental booking assistant.
 Help users with dental appointments, services, booking times, and general questions.
