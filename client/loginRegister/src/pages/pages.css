@@ -1,0 +1,19 @@
+/* Style the login form container */
+.login-form {
+  max-width: 400px;
+  margin: 15px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-form {
+  max-width: 400px;
+  padding-left: 10px;
+  margin: 15px auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 13px black;
+}
